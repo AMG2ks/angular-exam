@@ -1,0 +1,18 @@
+<form [formGroup]="addTaskForm">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" aria-describedby="title" placeholder=""
+           formControlName="title">
+  </div>
+  <div class="form-group">
+    <label for="dateD">Date Début</label>
+    <input type="date" class="form-control" id="dateD" aria-describedby="dateF" placeholder=""
+           formControlName="dateD">
+  </div>
+  <div class="form-group">
+    <label for="dateF">Date fin</label>
+    <input type="date" class="form-control" id="dateF" aria-describedby="dateF" placeholder=""
+           formControlName="dateF">
+  </div>
+  <button type="submit" (click)="addTask()" [routerLink]="['tasks', projectId]" [disabled]="addTaskForm.invalid || addTaskForm.hasError('invalidDateRange')" class="btn btn-primary">Add</button>
+</form>

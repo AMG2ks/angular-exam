@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Title</th>
+    <th scope="col">Date de début</th>
+    <th scope="col">Date de fin</th>
+    <th scope="col">Status</th>
+    <th scope="col">Projects</th>
+    <th scope="col">new status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let t of tasks">
+    <td>{{ t.id }}</td>
+    <td>{{ t.dateD }}</td>
+    <td>@{{ t.dateF }}</td>
+    <td>{{ t.status }}</td>
+    <td>{{ t.project }}</td>
+    <td>
+      <button type="button"  [routerLink]="['/addTask']" class="btn btn-primary mx-2">Add Task</button>
+      <button type="button"  class="btn btn-danger">Delete</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>

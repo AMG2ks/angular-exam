@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Description</th>
+    <th scope="col">Price</th>
+    <th scope="col">Quantity</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let p of products">
+    <td>{{ p.name }}</td>
+    <td>{{ p.description }}</td>
+    <td>@{{ p.price }}</td>
+    <td>{{ p.quantity }}</td>
+    <td>
+      <button type="button" (click)="sendDataToParent(p.description)" [routerLink]="['/edit', p.id]" class="btn btn-primary mx-2">Edit</button>
+      <button type="button" (click)="deleteProduct(p.id)" class="btn btn-danger">Delete</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>

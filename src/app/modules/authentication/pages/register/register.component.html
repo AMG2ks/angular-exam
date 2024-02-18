@@ -1,0 +1,22 @@
+<form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" class="form-control" id="firstName" aria-describedby="lastName" placeholder="Enter first name"
+           formControlName="first_name">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Enter last name"
+           formControlName="last_name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email"
+           formControlName="email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

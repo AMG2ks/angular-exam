@@ -1,0 +1,22 @@
+<form [formGroup]="editProductForm" (ngSubmit)="editProduct()">
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder=""
+           formControlName="name">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" aria-describedby="description" placeholder=""
+           formControlName="description">
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="text" class="form-control" id="price" aria-describedby="price" placeholder=""
+           formControlName="price">
+  </div>
+  <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input type="text" class="form-control" id="quantity" placeholder="" formControlName="quantity">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Title</th>
+    <th scope="col">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let p of projects">
+    <td>{{ p.id }}</td>
+    <td>{{ p.title }}</td>
+    <td>@{{ p.description }}</td>
+    <td>{{ p.quantity }}</td>
+    <td>
+      <button type="button"  [routerLink]="['/addTask', p.id]" class="btn btn-primary mx-2">Add Task</button>
+      <button type="button"  class="btn btn-danger">Delete</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>

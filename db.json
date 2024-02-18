@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "id": "0f25"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "password": "securepass",
+      "id": "9648"
+    },
+    {
+      "id": "c090",
+      "firstName": "sadsf",
+      "lastName": "asfasf",
+      "email": "asfasf@adsad.sdsd",
+      "password": "asfasfasfgzdgzdg"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project 1",
+      "description": "Description for Project 1",
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1",
+          "dateD": "2022-01-01",
+          "dateF": "2022-01-10",
+          "status": "In Progress"
+        },
+        {
+          "id": 2,
+          "title": "Task 2",
+          "dateD": "2022-02-01",
+          "dateF": "2022-02-15",
+          "status": "Completed"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Project 2",
+      "description": "Description for Project 2",
+      "tasks": [
+        {
+          "id": 3,
+          "title": "Task 3",
+          "dateD": "2022-03-01",
+          "dateF": "2022-03-10",
+          "status": "Not Started"
+        }
+      ]
+    }
+  ]
+}
